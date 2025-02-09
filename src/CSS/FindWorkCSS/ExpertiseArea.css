@@ -1,0 +1,161 @@
+.expertiseAreaContainer {
+  position: relative;
+  background-image: url("/areasofexpertise.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5% 10%;
+  color: #000;
+  margin-top: -1rem;
+}
+
+.contentArea {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.textSection {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.accordionArea {
+  width: 50%;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion {
+  margin-bottom: 20px;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.toggleIcon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.accordionContent {
+  padding: 10px 0;
+  border-top: 2px solid #ddd;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0056b3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #003d82;
+}
+
+.divider {
+  border: none;
+  border-top: 3px solid #ccc;
+  margin: 10px 0;
+}
+
+.title {
+  text-align: start;
+}
+
+.textSection {
+  width: 50%;
+  margin: 0 auto;
+  margin-right: -3rem;
+  text-align: start;
+}
+
+.accordionArea {
+  margin: 2rem auto;
+  margin-right: -3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .expertiseAreaContainer {
+    padding: 10%;
+    height: auto;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url("/mobile_backgrond.jpg");
+  }
+
+  .contentArea {
+    align-items: center;
+    text-align: center;
+  }
+
+  .accordion {
+    background: transparent;
+  }
+
+  .description {
+    text-align: start;
+  }
+
+  .links {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .button {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .textSection {
+    width: 100%;
+    text-align: start;
+    margin: 1rem auto;
+  }
+
+  .title {
+    text-align: start;
+  }
+
+  .accordionArea {
+    width: 100%;
+    text-align: start;
+    margin: 0 auto;
+    background: transparent;
+  }
+  .links {
+    flex-direction: column;
+  }
+}

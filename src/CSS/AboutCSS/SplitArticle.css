@@ -1,0 +1,48 @@
+/* SplitArticle.css */
+.split-article {
+  display: flex;
+  margin: 50px auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.left-side img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.right-side h2 {
+  margin-bottom: 10px;
+}
+
+.right-side p {
+  margin-bottom: 15px;
+}
+
+.right-side .btn-line-blue {
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: 2px solid #007bff;
+}
+
+@media screen and (max-width: 991px) {
+  .split-article {
+    display: block;
+    padding: 10px;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    padding: 10px 0;
+  }
+}

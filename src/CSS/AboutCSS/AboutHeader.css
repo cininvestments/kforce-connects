@@ -1,0 +1,74 @@
+.about-header {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+}
+
+/* Text Area */
+.text {
+  flex: 1;
+  background-color: rgb(72, 149, 206);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.jtextfill h1 {
+  margin: 0;
+}
+
+.mission-title {
+  text-decoration: underline;
+  font-size: 18pt;
+}
+
+.mission-content {
+  font-size: 18pt;
+}
+
+/* Video Area */
+.desktopView {
+  flex: 3;
+  display: block;
+  width: 60%;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .about-header {
+    flex-direction: row;
+  }
+
+  .text {
+    width: 40%;
+  }
+
+  .desktopView {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktopView {
+    display: none;
+  }
+
+  .about-header {
+    flex-direction: column;
+  }
+
+  .text {
+    width: 100%;
+  }
+}

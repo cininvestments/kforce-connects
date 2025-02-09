@@ -1,0 +1,69 @@
+/* CoreValue.css */
+
+.corevalue-container {
+  background: none;
+  padding: 50px 0;
+}
+
+.corevalue {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.corevalue-left,
+.corevalue-right {
+  flex: 1;
+  min-width: 300px;
+  padding: 15px;
+}
+
+.corevalue-left {
+  text-align: left;
+}
+
+.corevalue-right {
+  text-align: center;
+}
+
+.corevalue-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-line-blue {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  border: 2px solid #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-line-blue:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .corevalue {
+    flex-direction: column;
+  }
+
+  .corevalue-left,
+  .corevalue-right {
+    padding: 10px;
+  }
+
+  .corevalue-container {
+    padding: 20px 0;
+  }
+}

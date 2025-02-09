@@ -1,0 +1,147 @@
+.jobs-list-container {
+  width: 80vw;
+  margin: 5rem auto;
+}
+
+.job-count {
+  font-size: 18px;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+.top-count {
+  display: block;
+}
+
+.btm-count {
+  display: none;
+}
+
+.jobs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-card {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.job-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.job-title {
+  font-size: 1.5rem;
+  color: #00417b;
+  cursor: pointer;
+}
+
+.job-title:hover {
+  color: #39c0c4;
+}
+
+.job-date {
+  font-size: 0.9rem;
+  color: #39c0c4;
+}
+
+.job-description-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.job-description {
+  width: 70%;
+}
+
+.job-type-city {
+  width: 30%;
+  text-align: right;
+}
+
+.content-line {
+  height: 1px;
+  background-color: #ccc;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.load-more-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.no-jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 10%;
+}
+
+.no-jobs svg {
+  margin-bottom: 10px;
+  color: #888;
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .jobs-list-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .job-title-container,
+  .job-description-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-type-city {
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+
+  .job-description {
+    width: 100%;
+  }
+
+  .job-date {
+    margin-top: 0.3rem;
+  }
+
+  .top-count {
+    display: none;
+  }
+
+  .btm-count {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

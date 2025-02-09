@@ -1,0 +1,119 @@
+/* Container */
+.hero-section {
+  position: relative;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Video Background */
+.video-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  display: block;
+  filter: brightness(0.4); /* Darken the image */
+}
+
+/* Image Background */
+.image-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  display: none; /* Hide image by default */
+  filter: brightness(0.4); /* Darken the image */
+}
+
+/* Gradient Overlay */
+.hero-video-gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.7)
+  );
+  z-index: -1;
+}
+
+/* Light Blue Mask */
+.hero-image-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(159, 229, 252, 0.3); /* Light Blue RGBA */
+  z-index: 0;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 5%;
+}
+
+.content-container {
+  margin: auto;
+  max-width: 1200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.content-container span {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+p a.btn-filled {
+  color: white;
+  background-color: #007bff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+p a.btn-filled:hover {
+  background-color: white;
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .video-element {
+    display: none; /* Hide video on smaller screens */
+  }
+
+  .image-element {
+    display: block; /* Show image on smaller screens */
+  }
+
+  .content-container span {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-container span {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,149 @@
+.custom-container {
+  margin-top: 3rem;
+  box-sizing: border-box;
+}
+
+/* Background Image Section */
+.bg-image {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/kforcepic.jpg");
+  display: flex;
+  align-items: center;
+
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.nav-btns {
+  display: none;
+}
+.content-text {
+  padding-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .bg-image {
+    background-image: url("/kforepic.jpg");
+    height: auto;
+    padding: 6rem 2rem;
+    margin-top: -2rem;
+  }
+}
+
+.content-text {
+  max-width: 500px;
+  color: white;
+}
+
+.content-text span {
+  width: 100%;
+  font-size: 32px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.content-text p {
+  font-size: 16px;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+  color: #333333;
+}
+
+.content-text em {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Cards Section */
+.expert-cards-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: -2rem auto;
+  margin-left: 20%;
+  justify-content: center;
+}
+
+.expert-cards-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.expert-card {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 200px;
+  height: auto;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.expert-card:hover {
+  transform: scale(1.05);
+}
+
+.expert-card strong {
+  margin-bottom: 0.5rem;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.expert-card p {
+  height: auto;
+  text-align: center;
+}
+
+.survey-text {
+  font-weight: bold;
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .custom-container {
+    height: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  .content-text {
+    padding: 0.5rem;
+  }
+
+  .expert-cards-container {
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .expert-card {
+    width: 180px;
+  }
+
+  .nav-btns {
+    display: none;
+  }
+  .expert-cards-section {
+    margin-left: 1%;
+  }
+}
+
+@media (max-width: 368px) {
+  .custom-container {
+    margin: 1rem;
+  }
+
+  .expert-card {
+    width: 150px;
+  }
+}

@@ -1,0 +1,139 @@
+/* SubmitResume Component Styles */
+
+.header {
+  background-image: url("/bg-slashes-2.png");
+  height: 30vh;
+  color: white;
+  display: flex;
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  object-fit: cover;
+  padding: 1rem;
+  text-align: start;
+  width: 100%;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.title-id {
+  margin: 2rem 1rem;
+}
+.required-note {
+  text-align: center;
+}
+
+.header h1,
+.header h2 {
+  margin: 0;
+}
+
+.required-note {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+.resume-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.privacy-policy {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* ResumeForm Component Styles */
+.form-section {
+  flex: 1 1 calc(50% - 1rem);
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.resume-info {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Shared Styles for Both Components */
+form {
+  max-width: 800px;
+  margin: auto;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .form-section {
+    flex: 1 1 100%;
+  }
+
+  .submit-button {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 30vh;
+  }
+
+  .header h1,
+  .header h2 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,80 @@
+/* NetworkProfessionals.css */
+
+.network-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.network-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.network-header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.network-paragraph {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.network-image-section {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+}
+
+.network-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.network-image-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .network-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .network-content,
+  .network-image-section {
+    max-width: 100%;
+  }
+
+  .network-header {
+    font-size: 1.5rem;
+  }
+
+  .network-paragraph {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .network-header {
+    font-size: 1.2rem;
+  }
+
+  .network-paragraph {
+    font-size: 0.8rem;
+  }
+
+  .network-image-text {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,132 @@
+.insg_titlentxt {
+  margin-top: 0px !important;
+}
+.insightsBigContainer {
+  margin-top: 5rem;
+}
+
+#insg_SuperDiv {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.insg_titlentxt {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+.insg_Icon img {
+  height: 190px;
+  width: 397.35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s all ease-in-out;
+  margin-bottom: 1.2rem;
+}
+
+.summary-thumbnail-outer-container {
+  position: relative;
+  width: 100%;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.sqs-gallery-image-container:hover img {
+  transform: scale(1.07) !important;
+}
+.insg_ContentDiv h3 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.048px;
+  line-height: 26.4px;
+  margin-bottom: 1rem;
+}
+.insg_ContentDiv span {
+  font-size: 14px;
+  letter-spacing: -0.048px;
+  line-height: 20px;
+  height: auto;
+  width: auto;
+}
+.insg_ContentDiv p {
+  font-size: 16px;
+  letter-spacing: -0.048px;
+  line-height: 28px;
+  color: #337ab7;
+}
+.insg_ContentDiv {
+  text-align: start;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.insg_ContentDiv a:hover {
+  color: #14b5bf !important;
+}
+
+@media screen and (max-width: 1400px) {
+  #insg_SuperDiv {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #insg_SuperDiv {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .insg_ContentDiv {
+    width: 100% !important;
+    margin: 30px 0px;
+  }
+
+  .summary-thumbnail-outer-container {
+    width: 100%;
+  }
+
+  .insg_Icon img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #insg_SuperDiv {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #insg_SuperDiv .hideTextMobile {
+    display: none;
+  }
+
+  .insg_titlentxt {
+    margin-top: -75px !important;
+  }
+
+  #insg_SuperDiv {
+    margin-bottom: 0px;
+  }
+}
+
+.page-about .insightsBigContainer {
+  position: relative;
+  width: 98vw;
+  left: calc(-50vw + 53%);
+}
+
+@media screen and (max-width: 1400px) {
+  .page-about .insightsBigContainer {
+    position: relative;
+    width: 98vw;
+    left: calc(-51vw + 53%);
+  }
+}

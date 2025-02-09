@@ -1,0 +1,223 @@
+/* Main carousel container */
+.card-carousel-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  /* background-color: #262729; */
+}
+
+/* Carousel wrapper */
+.card-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual cards */
+.card-slider-container {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: scale(0.95);
+  visibility: hidden;
+}
+
+.card-slider-container.active {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible; /* Make active card visible */
+  z-index: 10; /* Ensure the active card is on top */
+}
+
+/* Image section */
+.image-section {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #1e1f21;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-right: 2px solid #14b5bf;
+}
+
+/* Content section */
+.content-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: white;
+  background-color: #262729;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  text-align: start;
+  /* padding: 5rem; */
+  padding-top: 6rem;
+  padding-left: 7rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+
+.content-section h3 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.048px;
+  line-height: 26.4px;
+}
+
+.content-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.content-section button {
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #14b5bf;
+  background-color: transparent;
+  color: #14b5bf;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  width: 150px;
+}
+
+.content-section button:hover {
+  background-color: #14b5bf;
+  color: white;
+}
+
+/* Dots below the content */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #14b5bf;
+}
+
+/* Navigation arrows */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.nav-arrow:hover {
+  background-color: #14b5bf;
+}
+
+.left-arrow {
+  left: 1rem;
+}
+
+.right-arrow {
+  right: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card-carousel-container {
+    height: auto;
+  }
+
+  .card-slider-container {
+    flex-direction: column;
+  }
+
+  .image-section {
+    width: 100%;
+    height: 50%;
+  }
+
+  .slider-image {
+    height: 100%;
+  }
+
+  .content-section {
+    width: 90%;
+    height: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .content-section h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto;
+    width: 70%;
+    text-align: start;
+  }
+  .content-section p {
+    margin: 0 auto;
+    text-align: start;
+    width: 70%;
+  }
+  .content-section .action-button {
+    margin: 1rem auto;
+    text-align: start;
+    width: 70%;
+  }
+  .content-section button {
+    width: 150px;
+    margin-right: -7rem;
+  }
+
+  .nav-arrow {
+    display: none;
+  }
+  .carousel-dots {
+    margin-bottom: 3rem;
+    margin: 3rem auto;
+    text-align: start;
+    /* width: 70%; */
+  }
+}

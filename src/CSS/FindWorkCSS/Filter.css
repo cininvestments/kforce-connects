@@ -1,0 +1,175 @@
+/* Base styles */
+.flex-n-cont {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 5rem;
+  padding: 5rem;
+  margin-top: -7rem;
+  height: auto;
+}
+
+.filter-container {
+  padding: 10px;
+  width: 20vw;
+  margin-left: 2rem;
+}
+
+.filter-toggle-button {
+  display: none;
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem auto;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.save-job-alert {
+  display: block;
+  background-color: #00417b;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 20vw;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.btn-bond {
+  margin-top: 6rem;
+}
+.save-job-alert:hover {
+  background-color: #fff;
+  color: #337ab7;
+  border: 2px solid #337ab7;
+}
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: wheat;
+}
+.dropdown-filter {
+  border: none;
+  margin-bottom: 10px;
+  outline: none;
+}
+.filter-option,
+.dropdown-filter {
+  cursor: pointer;
+  padding: 12px;
+  background: #fff;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.filter-option:hover {
+  background: #f0f0f0;
+}
+
+.filter-option.active {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.remove-filter {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  color: red;
+}
+
+/* Styles for large screens */
+@media screen and (min-width: 769px) {
+  .filter-container {
+    width: 20vw;
+    padding-right: 10px;
+    height: auto; /* Height based on content */
+    margin-top: 20px; /* Add space above */
+    overflow-y: visible; /* Remove vertical scrollbar */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Prevent body scroll when filter is open */
+  body {
+    overflow: unset;
+  }
+}
+
+/* Styles for small screens */
+@media screen and (max-width: 768px) {
+  .flex-n-cont {
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .save-job-alert {
+    margin: 2rem auto;
+    width: 80vw;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4rem;
+    background: #0c3050;
+  }
+  .filter-container {
+    width: 90vw;
+    max-height: auto; /* Limit height to avoid overflowing */
+    margin: 20px auto;
+    position: relative; /* Keeps it in the flow of the page */
+    padding: 20px;
+    margin-top: -2rem;
+    overflow-y: visible; /* Allow scrolling within the filter */
+  }
+
+  .filter-container.open {
+    transform: translateX(0); /* Show the filter when open */
+  }
+
+  .filter-toggle-button {
+    display: block;
+    width: 100%;
+    /* margin-top: 4rem; */
+    padding: 1rem;
+  }
+
+  .filter-options {
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
+  }
+  .filter-option {
+    height: 100%;
+  }
+
+  /* Hide vertical scrollbar on body */
+  /* body {
+    overflow-y: hidden;
+  } */
+}

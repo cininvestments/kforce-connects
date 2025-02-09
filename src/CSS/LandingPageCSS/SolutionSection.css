@@ -1,0 +1,474 @@
+.BigDiv_SolutionSectionMacro {
+  height: 520px;
+  margin: auto;
+  margin-top: 3rem;
+}
+a {
+  text-decoration: none;
+}
+.d-arrow {
+  display: flex;
+  align-items: center;
+}
+.BigDiv_SolutionSectionMacro .div_desktopView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2%;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .div_Circle {
+  width: 20%;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .spectrum {
+  position: absolute;
+  top: 43%;
+  z-index: 4;
+  font-weight: 600;
+  color: #011f66;
+  text-align: right;
+  width: 200px;
+  margin-left: 7%;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .spectrum.firstchild {
+  top: 60rem;
+  margin-right: 3rem;
+  font-size: 1.2rem;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .spectrum p {
+  font-size: 18pt !important;
+  margin-bottom: 0;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .div_Circle .circles {
+  margin-left: -40%;
+  position: relative;
+  margin-top: -298px;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .div_Circle .circles div {
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  border: solid 13px;
+  position: absolute;
+}
+
+.BigDiv_SolutionSectionMacro
+  .div_desktopView
+  .div_Circle
+  .circles
+  .div_Circle1 {
+  transform: rotate(43deg);
+  border-color: #d2d2d2 transparent transparent;
+  z-index: 0;
+}
+
+.BigDiv_SolutionSectionMacro
+  .div_desktopView
+  .div_Circle
+  .circles
+  .div_Circle1.coloredCircle {
+  border-color: #3190bd transparent transparent;
+}
+
+.BigDiv_SolutionSectionMacro
+  .div_desktopView
+  .div_Circle
+  .circles
+  .div_Circle2 {
+  transform: rotate(103deg);
+  border-color: #b4b5b6 transparent transparent;
+  z-index: 1;
+}
+
+.BigDiv_SolutionSectionMacro
+  .div_desktopView
+  .div_Circle
+  .circles
+  .div_Circle2.coloredCircle {
+  border-color: #175fd4 transparent transparent;
+}
+
+.BigDiv_SolutionSectionMacro
+  .div_desktopView
+  .div_Circle
+  .circles
+  .div_Circle3 {
+  transform: rotate(164deg);
+  border-color: #8e9090 transparent transparent;
+  z-index: 2;
+}
+
+.BigDiv_SolutionSectionMacro
+  .div_desktopView
+  .div_Circle
+  .circles
+  .div_Circle3.coloredCircle {
+  border-color: #07285c transparent transparent;
+}
+
+.BigDiv_SolutionSectionMacro
+  .div_desktopView
+  .div_Circle
+  .circles
+  .div_Circle4 {
+  border: solid 16px;
+  margin-top: 2px;
+  transform: rotate(228deg);
+  border-color: #fff transparent transparent;
+  z-index: 3;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .div_titles {
+  width: 30%;
+  height: 520px;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .div_titles .div_title1,
+.BigDiv_SolutionSectionMacro .div_desktopView .div_titles .div_title2,
+.BigDiv_SolutionSectionMacro .div_desktopView .div_titles .div_title3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  height: 33%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: -16px;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .div_titles .div_title2 {
+  margin-left: 31%;
+}
+
+.BigDiv_SolutionSectionMacro
+  .div_desktopView
+  .div_titles
+  .icon-right-open:before {
+  width: 2px;
+  font-size: 9px;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .div_titles a {
+  color: #b3b1b1;
+  /*margin-top: 55px;*/
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .div_titles a i {
+  visibility: hidden;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .div_images {
+  width: 50%;
+  height: 597px;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .div_images .div_images1,
+.BigDiv_SolutionSectionMacro .div_desktopView .div_images .div_images2,
+.BigDiv_SolutionSectionMacro .div_desktopView .div_images .div_images3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  position: relative;
+  height: inherit;
+  /*background-color: antiquewhite;*/
+}
+.acc-icons {
+  font-size: 2rem;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .div_images .div_images1 p,
+.BigDiv_SolutionSectionMacro .div_desktopView .div_images .div_images2 p,
+.BigDiv_SolutionSectionMacro .div_desktopView .div_images .div_images3 p {
+  line-height: 1.5 !important;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .shaped-left,
+.BigDiv_SolutionSectionMacro .div_desktopView .shaped-left img {
+  border-radius: 106px 0 0 0;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .shaped-right,
+.BigDiv_SolutionSectionMacro .div_desktopView .shaped-right img {
+  border-radius: 0 106px 0 0;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .text {
+  padding-top: 52px;
+  padding-left: 61px;
+  padding-right: 41px;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .text a:hover {
+  color: #39c0c4 !important;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .text.small,
+.BigDiv_SolutionSectionMacro .div_desktopView .image.small img {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .text.medium,
+.BigDiv_SolutionSectionMacro .div_desktopView .image.medium img {
+  width: 250px !important;
+  height: 250px !important;
+}
+
+.BigDiv_SolutionSectionMacro .div_desktopView .text.big,
+.BigDiv_SolutionSectionMacro .div_desktopView .image.big img {
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.BigDiv_SolutionSectionMacro .div_mobileView {
+  display: none;
+  width: 100%;
+  margin-left: 5%;
+}
+
+.BigDiv_SolutionSectionMacro .panel-heading {
+  padding: 10px 0px 5px 0px;
+}
+
+.BigDiv_SolutionSectionMacro .div_mobileView .ddlEven2 {
+  border-top: 1px solid black;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 97%;
+}
+
+.BigDiv_SolutionSectionMacro .div_mobileView .panel-body {
+  padding: 0px;
+}
+
+.BigDiv_SolutionSectionMacro .div_mobileView span,
+.BigDiv_SolutionSectionMacro .div_mobileView a {
+  color: #000 !important;
+}
+
+.BigDiv_SolutionSectionMacro .div_mobileView a span {
+  color: #337ab7 !important;
+}
+
+.BigDiv_SolutionSectionMacro .div_mobileView .title {
+  width: 90%;
+}
+
+.BigDiv_SolutionSectionMacro .div_mobileView .btnOfAccordion {
+  width: 10%;
+  margin: auto;
+  text-align: center;
+}
+
+/*min's*/
+
+@media screen and (min-width: 2400px) {
+  .BigDiv_SolutionSectionMacro .div_desktopView .div_Circle .circles {
+    margin-left: -20%;
+  }
+}
+
+@media screen and (min-width: 3001px) {
+  .BigDiv_SolutionSectionMacro .div_desktopView .div_Circle .circles {
+    margin-left: -6%;
+  }
+}
+
+/*max's*/
+@media screen and (max-width: 3000px) {
+  .BigDiv_SolutionSectionMacro {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 2500px) {
+  .BigDiv_SolutionSectionMacro {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .BigDiv_SolutionSectionMacro {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .BigDiv_SolutionSectionMacro .div_desktopView .div_Circle .circles {
+    left: -11%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .BigDiv_SolutionSectionMacro {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1528px) {
+  .BigDiv_SolutionSectionMacro {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  /*Query function linked to this*/
+  .BigDiv_SolutionSectionMacro .div_desktopView .text.small,
+  .BigDiv_SolutionSectionMacro .div_desktopView .image.small img {
+    width: 178px !important;
+    height: 164px !important;
+  }
+
+  .BigDiv_SolutionSectionMacro .div_desktopView .text.medium,
+  .BigDiv_SolutionSectionMacro .div_desktopView .image.medium img {
+    width: 248px !important;
+    height: 221px !important;
+  }
+}
+
+@media screen and (max-width: 1470px) {
+  .BigDiv_SolutionSectionMacro .div_desktopView .div_Circle .circles {
+    left: -18%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .BigDiv_SolutionSectionMacro .div_desktopView .div_Circle .circles {
+    left: -35%;
+  }
+}
+
+@media screen and (max-width: 1309px) {
+  /*Query function linked to this*/
+  .BigDiv_SolutionSectionMacro .div_desktopView .spectrum {
+    /*width: 14%;*/
+    margin-left: 1%;
+  }
+
+  .BigDiv_SolutionSectionMacro .div_desktopView .div_Circle .circles {
+    left: -38%;
+  }
+  .BigDiv_SolutionSectionMacro .div_desktopView .text.small,
+  .BigDiv_SolutionSectionMacro .div_desktopView .image.small img {
+    width: 178px !important;
+    height: 164px !important;
+  }
+
+  .BigDiv_SolutionSectionMacro .div_desktopView .text.medium,
+  .BigDiv_SolutionSectionMacro .div_desktopView .image.medium img {
+    width: 218px !important;
+    height: 184px !important;
+  }
+}
+
+@media screen and (max-width: 1278px) {
+  .BigDiv_SolutionSectionMacro .div_desktopView .div_Circle .circles {
+    left: -63%;
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  .BigDiv_SolutionSectionMacro .div_desktopView .div_Circle .circles {
+    left: -72%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .BigDiv_SolutionSectionMacro .div_desktopView .div_Circle .circles {
+    left: -86%;
+  }
+}
+
+@media screen and (max-width: 1031px) {
+  .BigDiv_SolutionSectionMacro .div_desktopView .div_Circle .circles {
+    left: -105%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .BigDiv_SolutionSectionMacro .div_desktopView .div_Circle .circles {
+    left: -122%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .BigDiv_SolutionSectionMacro {
+    height: auto;
+  }
+
+  .BigDiv_SolutionSectionMacro .div_desktopView {
+    display: none;
+  }
+
+  .BigDiv_SolutionSectionMacro .div_mobileView {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .BigDiv_SolutionSectionMacro .div_mobileView {
+    width: 93%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .BigDiv_SolutionSectionMacro .div_mobileView .title {
+    width: 100%;
+  }
+
+  .page-home .primary-content .about {
+    padding: 20px 0 !important;
+  }
+
+  .primary-content.inner {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .BigDiv_SolutionSectionMacro .div_mobileView .title {
+    width: 100%;
+  }
+}
+.div_desktopView {
+  display: flex;
+}
+
+.div_mobileView {
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.accordion_item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion_title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px;
+  /* background-color: #f9f9f9; */
+}
+
+.accordion_content {
+  padding: 10px;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .div_desktopView {
+    display: none;
+  }
+
+  .div_mobileView {
+    display: flex;
+  }
+}
